@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Landlord Compliance – HomeSafe360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path fill="#0d6efd" d="M32 4l22 8v18c0 13.3-9.1 25.3-22 28-12.9-2.7-22-14.7-22-28V12z"/>
+        <path fill="#fff" d="M27.7 38.6L20.4 31l3.2-3.1 4.1 4.3 9.7-9.8 3.2 3.1z"/>
+      </svg>
+      <span class="logo-text">HomeSafe360</span>
+    </a>
+    <nav class="main-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="landlords.html" class="active">Landlords</a></li>
+        <li><a href="seniors.html">Senior Safety</a></li>
+        <li><a href="portal.html">Client Portal</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Landlord Compliance Programs</h1>
+    <p class="lead">
+      Reduce emergency repairs, protect your assets, and document safety
+      checks across your portfolio with HomeSafe360’s landlord programs.
+    </p>
+
+    <div class="two-column">
+      <div>
+        <h2>Why Landlords Work with HomeSafe360</h2>
+        <ul class="bullets">
+          <li>Photo-backed inspection reports for each unit</li>
+          <li>Proof of safety diligence for insurance and tribunals</li>
+          <li>Early detection of leaks, ventilation, and hazard issues</li>
+          <li>Improved tenant satisfaction and retention</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sample Portfolio Packages</h3>
+        <ul class="bullets">
+          <li><strong>10–24 units:</strong> per-unit monthly plan</li>
+          <li><strong>25–49 units:</strong> discounted frequency bundle</li>
+          <li><strong>50+ units:</strong> custom route-optimized program</li>
+        </ul>
+        <p><strong>All programs include:</strong> inspection reports, hazard flags, and consolidated summaries.</p>
+      </div>
+    </div>
+
+    <h2 id="landlord-form">Request a Landlord Proposal</h2>
+    <p>Use the form below and we’ll send you a portfolio quote and sample report.</p>
+
+    <form class="form" method="post" action="#">
+      <!-- Replace action with Formspree or your backend later -->
+      <div class="form-row">
+        <label for="ll-name">Name</label>
+        <input id="ll-name" name="name" type="text" required />
+      </div>
+      <div class="form-row">
+        <label for="ll-email">Email</label>
+        <input id="ll-email" name="email" type="email" required />
+      </div>
+      <div class="form-row">
+        <label for="ll-phone">Phone</label>
+        <input id="ll-phone" name="phone" type="tel" />
+      </div>
+      <div class="form-row">
+        <label for="ll-units">Number of Units</label>
+        <input id="ll-units" name="units" type="number" min="1" />
+      </div>
+      <div class="form-row">
+        <label for="ll-locations">Locations / Cities</label>
+        <textarea id="ll-locations" name="locations" rows="3"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="ll-notes">Notes or Specific Concerns</label>
+        <textarea id="ll-notes" name="notes" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Request Proposal</button>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HomeSafe360. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
