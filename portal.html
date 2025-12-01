@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Client Portal – HomeSafe360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path fill="#0d6efd" d="M32 4l22 8v18c0 13.3-9.1 25.3-22 28-12.9-2.7-22-14.7-22-28V12z"/>
+        <path fill="#fff" d="M27.7 38.6L20.4 31l3.2-3.1 4.1 4.3 9.7-9.8 3.2 3.1z"/>
+      </svg>
+      <span class="logo-text">HomeSafe360</span>
+    </a>
+    <nav class="main-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="landlords.html">Landlords</a></li>
+        <li><a href="seniors.html">Senior Safety</a></li>
+        <li><a href="portal.html" class="active">Client Portal</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container narrow">
+    <h1>Client Portal</h1>
+    <p class="lead">
+      This simple placeholder can later connect to a real login system or
+      Google Drive/Docs share. For now, it lets clients send secure access
+      requests tagged as “portal” in your inbox.
+    </p>
+
+    <form class="form" method="post" action="#">
+      <div class="form-row">
+        <label for="pl-email">Email</label>
+        <input id="pl-email" name="email" type="email" required />
+      </div>
+      <div class="form-row">
+        <label for="pl-id">Property / Account ID</label>
+        <input id="pl-id" name="property_id" type="text" />
+      </div>
+      <div class="form-row">
+        <label for="pl-request">What do you need?</label>
+        <select id="pl-request" name="request">
+          <option value="report">View latest report</option>
+          <option value="schedule">Change upcoming visit</option>
+          <option value="billing">Billing question</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="pl-notes">Details</label>
+        <textarea id="pl-notes" name="notes" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Portal Request</button>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HomeSafe360. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
