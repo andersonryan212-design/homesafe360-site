@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact & Booking – HomeSafe360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path fill="#0d6efd" d="M32 4l22 8v18c0 13.3-9.1 25.3-22 28-12.9-2.7-22-14.7-22-28V12z"/>
+        <path fill="#fff" d="M27.7 38.6L20.4 31l3.2-3.1 4.1 4.3 9.7-9.8 3.2 3.1z"/>
+      </svg>
+      <span class="logo-text">HomeSafe360</span>
+    </a>
+    <nav class="main-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="landlords.html">Landlords</a></li>
+        <li><a href="seniors.html">Senior Safety</a></li>
+        <li><a href="portal.html">Client Portal</a></li>
+        <li><a href="contact.html" class="active">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Contact & Booking</h1>
+    <p class="lead">
+      Use the quick booking form below or send us a message with any
+      questions about HomeSafe360.
+    </p>
+
+    <div class="two-column stack-on-mobile">
+      <!-- Booking form -->
+      <section id="book">
+        <h2>Book a Home Inspection</h2>
+        <form class="form" method="post" action="#">
+          <!-- Replace action with your form handler or Formspree -->
+          <div class="form-row">
+            <label for="bk-name">Name</label>
+            <input id="bk-name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="bk-email">Email</label>
+            <input id="bk-email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="bk-phone">Phone</label>
+            <input id="bk-phone" name="phone" type="tel" />
+          </div>
+          <div class="form-row">
+            <label for="bk-address">Property Address</label>
+            <input id="bk-address" name="address" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="bk-plan">Plan of Interest</label>
+            <select id="bk-plan" name="plan">
+              <option value="">Select a plan</option>
+              <option value="Bronze">Bronze – Monthly</option>
+              <option value="Silver">Silver – Quarterly</option>
+              <option value="Gold">Gold – Annual</option>
+              <option value="Landlord">Landlord Portfolio</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="bk-notes">Notes (optional)</label>
+            <textarea id="bk-notes" name="notes" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+        </form>
+      </section>
+
+      <!-- General contact -->
+      <section id="contact-form">
+        <h2>General Questions</h2>
+        <form class="form" method="post" action="#">
+          <div class="form-row">
+            <label for="ct-name">Name</label>
+            <input id="ct-name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="ct-email">Email</label>
+            <input id="ct-email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="ct-message">Message</label>
+            <textarea id="ct-message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline">Send Message</button>
+        </form>
+
+        <div class="contact-details">
+          <p><strong>Email:</strong> info@homesafe360.com (placeholder)</p>
+          <p><strong>Service area:</strong> [Your city/region here]</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HomeSafe360. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
