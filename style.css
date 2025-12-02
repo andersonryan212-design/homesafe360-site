@@ -144,4 +144,27 @@ body {
   padding: 20px 0;
   text-align: center;
 }
+/* ICON SIZE FIX — MAKE MUCH SMALLER */
+.icon-grid img,
+.feature-pill img,
+.feature-pill svg {
+    width: 60px !important;      /* change to 50px if you want smaller */
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center titles under icons */
+.icon-grid p,
+.feature-pill span {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* Make the container not stretch them */
+.icon-grid div {
+    text-align: center;
+}
 
