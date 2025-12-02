@@ -184,4 +184,20 @@ body {
     font-weight: 600;           /* optional bold */
     margin-top: 4px;
 }
+/* ICON FIX — Make all icons small thumbnails */
+.icon-grid img {
+    width: 55px;      /* adjust as needed */
+    height: 55px;     /* same height for perfect circles */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 6px auto; /* center + spacing */
+}
+
+/* Center titles under icons */
+.icon-grid p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
 
