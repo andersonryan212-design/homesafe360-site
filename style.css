@@ -1,119 +1,167 @@
-/* ---------------- GLOBAL ---------------- */
-
+/* ================= GENERAL ================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #1A1A1A;
-    background: #FFFFFF;
+    background: #ffffff;
+    color: #222;
 }
 
-h1, h2 {
-    text-align: center;
-    margin-bottom: 10px;
+/* ================= NAVIGATION ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
 }
 
-section {
-    padding: 60px 8%;
+.logo-small {
+    font-size: 22px;
+    margin: 0;
+    color: #1a4db3;
 }
 
-/* ---------------- HERO SECTION ---------------- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #1a4db3;
+}
+
+/* ================= HERO ================= */
 .hero {
-    height: 55vh;
-    background-image: url('assets/hero-house.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url("assets/hero-house.jpg") center/cover no-repeat;
+    height: 480px;
     position: relative;
 }
 
 .hero-overlay {
-    background: rgba(0,0,0,0.45);
     height: 100%;
-    width: 100%;
-    color: #fff;
+    background: rgba(0,0,0,0.45);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 60px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: #1a4db3;
+    color: white;
+}
+
+.primary:hover {
+    background: #0f3a8e;
+}
+
+.secondary {
+    background: white;
+    color: #1a4db3;
+    border: 2px solid #1a4db3;
+}
+
+.secondary:hover {
+    background: #e8efff;
+}
+
+/* ================= ICON GRID ================= */
+.icon-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.icon-item {
     text-align: center;
 }
 
-/* ---------------- ICON GRID ---------------- */
-
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-top: 40px;
+.icon-item img {
+    width: 90px;
+    margin-bottom: 10px;
 }
 
-.icon-grid img {
-    width: 70px;
-    display: block;
-    margin: auto;
+.icon-item p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-/* ---------------- WHY SAFETY + MOLD ---------------- */
-
+/* ================= WHY SAFETY MATTERS ================= */
 .why-safety {
     display: flex;
-    gap: 40px;
-    align-items: center;
     justify-content: space-between;
-}
-
-.why-left {
-    width: 45%;
-}
-
-.why-left ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    padding: 60px;
+    gap: 40px;
 }
 
 .mold-compare {
-    width: 45%;
     display: flex;
-    justify-content: space-between;
-}
-
-.compare-item {
-    width: 48%;
-    position: relative;
+    gap: 20px;
 }
 
 .compare-item img {
-    width: 100%;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #000000b0;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 13px;
-    border-radius: 4px;
-}
-
-.before { background: #b00000d0; }
-.after { background: #00a000d0; }
-
-/* ---------------- HOW IT WORKS ---------------- */
-
-.how-it-works ol {
-    max-width: 600px;
-    margin: auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-/* ---------------- FOOTER ---------------- */
-
-footer {
-    background: #111;
-    color: #fff;
+    display: block;
     text-align: center;
-    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* ================= HOW IT WORKS ================= */
+.how-it-works {
+    padding: 60px;
+    background: #f7f7f7;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #1a4db3;
+    color: white;
+    margin-top: 50px;
 }
