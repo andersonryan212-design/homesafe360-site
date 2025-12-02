@@ -167,4 +167,21 @@ body {
 .icon-grid div {
     text-align: center;
 }
+/* ICON FIX — Force small thumbnail size */
+.feature-pill img,
+.icon-grid img {
+    width: 36px !important;     /* size of the icons */
+    height: 36px !important;    /* keep square */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 6px auto;    /* center icon */
+}
+
+/* Center the text below icons */
+.feature-pill span,
+.icon-grid p {
+    text-align: center;
+    font-weight: 600;           /* optional bold */
+    margin-top: 4px;
+}
 
