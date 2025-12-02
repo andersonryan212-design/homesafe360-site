@@ -1,87 +1,97 @@
-/* GENERAL */
+/* ------------ Global Reset ------------ */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #333;
+  font-family: "Inter", sans-serif;
+  color: #222;
+  line-height: 1.6;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-/* HEADER */
+/* ------------ Header ------------ */
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
+  background: white;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
   text-decoration: none;
 }
 
 .logo-icon {
-  width: 40px;
+  width: 26px;
+  margin-right: 6px;
 }
 
 .logo-text {
-  color: #0d6efd;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d1c32;
 }
 
-/* NAVIGATION */
 .main-nav ul {
   display: flex;
-  gap: 20px;
   list-style: none;
+  gap: 26px;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 15px;
 }
 
-/* HERO */
+.main-nav a.active,
+.main-nav a:hover {
+  color: #0d6efd;
+}
+
+/* ------------ Hero Section ------------ */
 .hero {
-  background: url("../hero-house.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 80px 0;
-  color: white;
+  background: url("../hero-house.jpg") center/cover no-repeat;
+  padding: 90px 0;
   position: relative;
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.hero-title {
-  font-size: 42px;
-  font-weight: bold;
+.hero-copy {
+  max-width: 540px;
 }
 
-.hero-cta {
-  margin: 20px 0;
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.btn {
-  padding: 12px 20px;
-  border-radius: 4px;
+.hero p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.hero-cta .btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
   text-decoration: none;
+  margin-right: 12px;
 }
 
 .btn-primary {
@@ -90,114 +100,130 @@ body {
 }
 
 .btn-outline {
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
 }
 
-/* ICON GRID */
-.icon-grid {
+/* Feature Pills */
+.feature-pill-wrap {
+  margin-top: 25px;
   display: flex;
-  gap: 30px;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.icon-box {
-  text-align: center;
+.feature-pill {
+  background: #f0f6ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #0d6efd;
+  font-weight: 600;
 }
 
-.icon-thumb {
-  width: 65px;
-  height: 65px;
-  margin-bottom: 10px;
-}
-
-/* WHY SAFETY MATTERS */
+/* ------------ WHY SAFETY MATTERS ------------ */
 .why-safety {
-  margin: 60px auto;
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  padding: 80px 0;
 }
 
-.mold-compare {
+.why-inner {
+  display: flex;
+  gap: 50px;
+}
+
+.why-left {
+  flex: 1;
+}
+
+.why-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.compare-box {
   display: flex;
   gap: 20px;
 }
 
 .compare-img {
-  width: 220px;
-  height: 160px;
-  object-fit: cover;
+  width: 50%;
+  border: 1px solid #ddd;
   border-radius: 6px;
+  overflow: hidden;
+  position: relative;
 }
 
 .label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,.7);
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
-/* FOOTER */
+/* ------------ HOW IT WORKS ------------ */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+
+.three-column {
+  display: flex;
+  gap: 30px;
+}
+
+.step-card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* ------------ Pricing ------------ */
+.section-alt {
+  background: #f7faff;
+}
+
+.pricing-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.pricing-card {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.pricing-card.featured {
+  border: 2px solid #0d6efd;
+}
+
+/* ------------ Footer ------------ */
 .site-footer {
-  background: #0d6efd;
+  background: #0d1c32;
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
 }
-/* ICON SIZE FIX — MAKE MUCH SMALLER */
-.icon-grid img,
-.feature-pill img,
-.feature-pill svg {
-    width: 60px !important;      /* change to 50px if you want smaller */
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
-}
 
-/* Center titles under icons */
-.icon-grid p,
-.feature-pill span {
-    text-align: center;
-    font-weight: 600;
-    margin-top: 8px;
-    font-size: 0.9rem;
+.footer-links a {
+  color: #93b1d8;
 }
-
-/* Make the container not stretch them */
-.icon-grid div {
-    text-align: center;
-}
-/* ICON FIX — Force small thumbnail size */
-.feature-pill img,
-.icon-grid img {
-    width: 36px !important;     /* size of the icons */
-    height: 36px !important;    /* keep square */
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 6px auto;    /* center icon */
-}
-
-/* Center the text below icons */
-.feature-pill span,
-.icon-grid p {
-    text-align: center;
-    font-weight: 600;           /* optional bold */
-    margin-top: 4px;
-}
-/* ICON FIX — Make all icons small thumbnails */
-.icon-grid img {
-    width: 55px;      /* adjust as needed */
-    height: 55px;     /* same height for perfect circles */
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 6px auto; /* center + spacing */
-}
-
-/* Center titles under icons */
-.icon-grid p {
-    text-align: center;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-top: 4px;
-}
-
