@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>HomeSafe360 – Proactive Home Safety & Preventative Maintenance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <img src="assets/logo-shield-check.png" class="logo-img" alt="HomeSafe360 Logo">
+      <img src="assets/logo-shield-check.png" class="logo-icon" alt="Logo"/>
       <span class="logo-text">HomeSafe360</span>
     </a>
 
@@ -32,75 +32,155 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero-content container">
-    <h1>Proactive Home Safety & Preventative Maintenance</h1>
+  <div class="container hero-inner">
 
-    <p>
-      Monthly, quarterly, and annual inspections to protect your home,
-      tenants, and loved ones. HomeSafe360 keeps small issues from becoming big emergencies.
-    </p>
+    <div class="hero-copy">
+      <h1>Proactive Home Safety &amp; Preventative Maintenance</h1>
+      <p>
+        Monthly, quarterly, and annual inspections to protect your home,
+        your tenants, and your loved ones. HomeSafe360 keeps small issues
+        from becoming big emergencies.
+      </p>
 
-    <div class="hero-cta">
-      <a href="contact.html#book" class="btn primary">Book First Inspection</a>
-      <a href="services.html#service-menu" class="btn outline">View Service Menu</a>
+      <div class="hero-cta">
+        <a href="contact.html#book" class="btn btn-primary">Book First Inspection</a>
+        <a href="services.html#service-menu" class="btn btn-outline">View Service Menu</a>
+      </div>
+
+      <!-- Feature Pills (NO ICONS) -->
+      <div class="feature-pill-wrap">
+        <div class="feature-pill"><span>Monthly Inspections</span></div>
+        <div class="feature-pill"><span>Safety Testing</span></div>
+        <div class="feature-pill"><span>Senior Home Safety</span></div>
+        <div class="feature-pill"><span>Landlord Compliance</span></div>
+      </div>
     </div>
 
-    <div class="feature-list">
-      <p>Monthly Inspections</p>
-      <p>Safety Testing</p>
-      <p>Senior Home Safety</p>
-      <p>Landlord Compliance</p>
-    </div>
   </div>
 </section>
 
 <!-- ================= WHY SAFETY MATTERS ================= -->
-<section class="why-section container">
-  <div class="why-text">
-    <h2>Why Proactive Safety Matters</h2>
-    <ul>
-      <li>Prevent costly water, electrical, and structural damage.</li>
-      <li>Catch hidden risks before they turn into emergencies.</li>
-      <li>Protect seniors, families, and tenants from avoidable hazards.</li>
-      <li>Required documentation for insurance & landlord compliance.</li>
-    </ul>
-  </div>
+<section class="why-safety">
+  <div class="container why-inner">
 
-  <div class="mold-compare">
-    <div class="compare-item">
-      <span class="compare-label">Before</span>
-      <img src="assets/Mold-before.jpg" alt="Mold Before">
+    <div class="why-left">
+      <h2>Why Proactive Safety Matters</h2>
+      <p>
+        Most water damage, fires, and home injuries are preventable with
+        regular safety checks. HomeSafe360 documents risk and catches small
+        issues before they become five-figure problems.
+      </p>
+
+      <ul class="checklist">
+        <li>Documented inspections for insurance & landlords</li>
+        <li>Safer homes for seniors & families</li>
+        <li>Simple, subscription-based pricing</li>
+      </ul>
     </div>
-    <div class="compare-item">
-      <span class="compare-label">After</span>
-      <img src="assets/Mold-after.jpg" alt="Mold After">
+
+    <div class="why-right">
+      <div class="compare-box">
+        <div class="compare-img">
+          <span class="label before">Before</span>
+          <img src="assets/Mold-before.jpg" alt="Before Mold">
+        </div>
+        <div class="compare-img">
+          <span class="label after">After</span>
+          <img src="assets/Mold-after.jpg" alt="After Mold">
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
 <!-- ================= HOW IT WORKS ================= -->
-<section class="how-section container">
-  <h2>How HomeSafe360 Works</h2>
-  <div class="steps">
-    <div class="step">
-      <h3>1. Baseline Safety Inspection</h3>
-      <p>A complete whole-home safety review with photos and hazard detection.</p>
-    </div>
-    <div class="step">
-      <h3>2. Ongoing Check-Ins</h3>
-      <p>Monthly, quarterly, or annual inspections based on your plan.</p>
-    </div>
-    <div class="step">
-      <h3>3. Digital Reports</h3>
-      <p>Pass/fail safety points, moisture scans, alarms, ventilation & more.</p>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How HomeSafe360 Works</h2>
+    <div class="three-column">
+      <div class="card step-card">
+        <h3>1. Baseline Safety Inspection</h3>
+        <p>Full 90-point inspection with photos and action plan.</p>
+      </div>
+
+      <div class="card step-card">
+        <h3>2. Ongoing Check-Ins</h3>
+        <p>Monthly, quarterly, or annual visits to verify safety points.</p>
+      </div>
+
+      <div class="card step-card">
+        <h3>3. Digital Reports & Alerts</h3>
+        <p>Simple report with photos, pass/fail items, and upgrades.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ================= PRICING RESTORED ================= -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Plans at a Glance</h2>
+
+    <div class="pricing-grid">
+      <article class="card pricing-card">
+        <h3>Bronze</h3>
+        <p class="price">$159<span>/month</span></p>
+        <ul>
+          <li>Monthly safety checks</li>
+          <li>Leak & moisture scans</li>
+          <li>Digital report every visit</li>
+        </ul>
+        <a href="contact.html#book" class="btn btn-primary">Start Bronze</a>
+      </article>
+
+      <article class="card pricing-card featured">
+        <h3>Silver</h3>
+        <p class="price">$129<span>/month</span></p>
+        <ul>
+          <li>Quarterly deep-dive inspections</li>
+          <li>Dryer vent & venting checks</li>
+          <li>Priority scheduling</li>
+        </ul>
+        <a href="contact.html#book" class="btn btn-primary">Start Silver</a>
+      </article>
+
+      <article class="card pricing-card">
+        <h3>Gold</h3>
+        <p class="price">$59<span>/month</span></p>
+        <ul>
+          <li>Annual whole-home inspection</li>
+          <li>Insurance-ready documentation</li>
+        </ul>
+        <a href="contact.html#book" class="btn btn-primary">Start Gold</a>
+      </article>
+    </div>
+
+    <p class="center-text">
+      Need multi-unit or landlord pricing?
+      <a href="landlords.html">See landlord packages</a>.
+    </p>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2025 HomeSafe360. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HomeSafe360. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="services.html">Services</a> ·
+      <a href="landlords.html">Landlords</a> ·
+      <a href="seniors.html">Senior Safety</a> ·
+      <a href="portal.html">Client Portal</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
+
