@@ -1,110 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HomeSafe360</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>HomeSafe360 – Proactive Home Safety & Preventative Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HomeSafe360 provides monthly, quarterly, and annual home safety inspections, senior home safety, and landlord compliance services." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
 
-<!-- ================= NAVIGATION ================= -->
-<nav class="navbar">
-    <div class="nav-left">
-        <h1 class="logo-small">HomeSafe360</h1>
-    </div>
+<!-- ========================================================= -->
+<!-- HEADER (RESTORED EXACTLY AS ORIGINAL) -->
+<!-- ========================================================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+        <path fill="#0d6efd" d="M32 4l22 8v18c0 13.3-9.1 25.3-22 28-12.9-2.7-22-14.7-22-28V12z"/>
+        <path fill="#fff" d="M27.7 38.6L20.4 31l3.2-3.1 4.1 4.3 9.7-9.8 3.2 3.1z"/>
+      </svg>
+      <span class="logo-text">HomeSafe360</span>
+    </a>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="landlords.html">Landlords</a></li>
         <li><a href="seniors.html">Senior Safety</a></li>
         <li><a href="portal.html">Client Portal</a></li>
         <li><a href="contact.html">Contact & Booking</a></li>
-    </ul>
-</nav>
-
-<!-- ================= HERO SECTION ================= -->
-<header class="hero">
-    <div class="hero-overlay">
-        <h2 class="hero-title">Proactive Home Safety<br>& Preventative Maintenance</h2>
-        <p class="hero-subtitle">Catch problems early. Prevent emergencies. Protect your home.</p>
-
-        <div class="hero-buttons">
-            <a class="btn primary" href="contact.html">Book First Inspection</a>
-            <a class="btn secondary" href="services.html">View Service Menu</a>
-        </div>
-    </div>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<!-- ================= ICON GRID ================= -->
-<section class="proactive">
-    <div class="icon-grid">
 
-        <div class="icon-item">
-            <img src="assets/icon-monthly-inspections.png">
-            <p><strong>Monthly Inspections</strong></p>
+<!-- ========================================================= -->
+<!-- HERO SECTION (UNCHANGED EXCEPT THE BACKGROUND IMAGE) -->
+<!-- ========================================================= -->
+<section class="hero" style="background-image:url('assets/hero-house.jpg');">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+
+      <h1 class="hero-title">Proactive Home Safety &amp; Preventative Maintenance</h1>
+
+      <p>
+        Monthly, quarterly, and annual inspections to protect your home,
+        your tenants, and your loved ones. HomeSafe360 keeps small issues
+        from becoming big emergencies.
+      </p>
+
+      <div class="hero-cta">
+        <a href="contact.html#book" class="btn btn-primary">Book First Inspection</a>
+        <a href="services.html#service-menu" class="btn btn-outline">View Service Menu</a>
+      </div>
+
+      <!-- ICON PILL FEATURES (centered labels) -->
+      <div class="hero-features">
+        <div class="feature-pill">
+          <img src="assets/icon-monthly-inspections.png" class="pill-img" />
+          <span class="pill-label">Monthly Inspections</span>
         </div>
 
-        <div class="icon-item">
-            <img src="assets/icon-safety-testing.png">
-            <p><strong>Safety Testing</strong></p>
+        <div class="feature-pill">
+          <img src="assets/icon-safety-testing.png" class="pill-img" />
+          <span class="pill-label">Safety Testing</span>
         </div>
 
-        <div class="icon-item">
-            <img src="assets/icon-senior-safety.png">
-            <p><strong>Senior Safety</strong></p>
+        <div class="feature-pill">
+          <img src="assets/icon-senior-safety.png" class="pill-img" />
+          <span class="pill-label">Senior Home Safety</span>
         </div>
 
-        <div class="icon-item">
-            <img src="assets/icon-landlord-compliance.png">
-            <p><strong>Landlord Compliance</strong></p>
+        <div class="feature-pill">
+          <img src="assets/icon-landlord-compliance.png" class="pill-img" />
+          <span class="pill-label">Landlord Compliance</span>
         </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 
-<!-- ================= WHY SAFETY MATTERS + MOLD SECTION ================= -->
-<section class="why-safety">
-    <div class="why-left">
-        <h2>Why Proactive Safety Matters</h2>
-        <ul>
-            <li>Small problems become big emergencies when ignored.</li>
-            <li>Water, mold, electrical and structural hazards often go unseen.</li>
-            <li>Landlords and homeowners save thousands with prevention.</li>
-            <li>Proactive inspections reduce risk, stress, and liability.</li>
-        </ul>
+<!-- ========================================================= -->
+<!-- NEW SECTION (INSERTED HERE) — WHY SAFETY MATTERS + BEFORE/AFTER -->
+<!-- ========================================================= -->
+<section class="section why-proactive">
+  <div class="container two-column">
+
+    <!-- LEFT: TEXT -->
+    <div class="why-text">
+      <h2>Why Proactive Safety Matters</h2>
+      <ul>
+        <li>Small problems become big emergencies when ignored.</li>
+        <li>Water, mold, electrical, and structural hazards often go unseen.</li>
+        <li>Landlords and homeowners save thousands through prevention.</li>
+        <li>Documentation reduces risk, stress, and liability.</li>
+      </ul>
     </div>
 
-    <div class="mold-compare">
-        <div class="compare-item">
-            <span class="label before">Before</span>
-            <img src="assets/Mold-before.jpg" alt="Mold Before">
-        </div>
+    <!-- RIGHT: BEFORE/AFTER SIDE-BY-SIDE -->
+    <div class="before-after-grid">
+      <div class="ba-item">
+        <p class="ba-label">Before</p>
+        <img src="assets/Mold-before.jpg" alt="Mold Before" />
+      </div>
 
-        <div class="compare-item">
-            <span class="label after">After</span>
-            <img src="assets/Mold-after.jpg" alt="Mold After">
-        </div>
+      <div class="ba-item">
+        <p class="ba-label">After</p>
+        <img src="assets/Mold-after.jpg" alt="Mold After" />
+      </div>
     </div>
+
+  </div>
 </section>
 
 
-<!-- ================= HOW IT WORKS ================= -->
-<section class="how-it-works">
-    <h2>How HomeSafe360 Works</h2>
-    <ol>
-        <li>Choose a monthly, quarterly, or annual plan</li>
-        <li>Our technician performs a detailed safety inspection</li>
-        <li>You receive a digital report with photos and recommendations</li>
-        <li>We return proactively—before problems become emergencies</li>
-    </ol>
+<!-- ========================================================= -->
+<!-- HOW IT WORKS (UNCHANGED) -->
+<!-- ========================================================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How HomeSafe360 Works</h2>
+
+    <div class="three-column">
+      <div class="card step-card">
+        <h3>1. Baseline Safety Inspection</h3>
+        <p>
+          We start with a full 90-point inspection, photo documentation,
+          and a clear action plan for your home or rental portfolio.
+        </p>
+      </div>
+
+      <div class="card step-card">
+        <h3>2. Ongoing Check-Ins</h3>
+        <p>
+          Monthly, quarterly, or annual visits to test alarms, scan for leaks,
+          verify ventilation, and re-check key safety points.
+        </p>
+      </div>
+
+      <div class="card step-card">
+        <h3>3. Digital Reports & Alerts</h3>
+        <p>
+          You receive a clean, simple report with photos, pass/fail items,
+          and recommended upgrades or add-ons.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2025 HomeSafe360.com — All Rights Reserved</p>
-</footer>
 
+<!-- ========================================================= -->
+<!-- PRICING + CTA + FOOTER (UNCHANGED) -->
+<!-- ========================================================= -->
+<section class="section section-alt"> ... (LEAVE YOUR EXISTING CODE HERE) ... </section>
+
+<section class="section"> ... (LEAVE YOUR CTA CODE HERE) ... </section>
+
+<footer class="site-footer"> ... (LEAVE YOUR FOOTER CODE HERE) ... </footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
+
