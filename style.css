@@ -1,0 +1,119 @@
+/* ---------------- GLOBAL ---------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1A1A1A;
+    background: #FFFFFF;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+
+.hero {
+    height: 55vh;
+    background-image: url('assets/hero-house.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.45);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ---------------- ICON GRID ---------------- */
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.icon-grid img {
+    width: 70px;
+    display: block;
+    margin: auto;
+}
+
+/* ---------------- WHY SAFETY + MOLD ---------------- */
+
+.why-safety {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.why-left {
+    width: 45%;
+}
+
+.why-left ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.mold-compare {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.compare-item {
+    width: 48%;
+    position: relative;
+}
+
+.compare-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #000000b0;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.before { background: #b00000d0; }
+.after { background: #00a000d0; }
+
+/* ---------------- HOW IT WORKS ---------------- */
+
+.how-it-works ol {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
