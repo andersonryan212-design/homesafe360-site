@@ -10,21 +10,16 @@
 
 <body>
 
-<!-- ========================================================= -->
-<!-- HEADER (RESTORED EXACTLY AS ORIGINAL) -->
-<!-- ========================================================= -->
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
-        <path fill="#0d6efd" d="M32 4l22 8v18c0 13.3-9.1 25.3-22 28-12.9-2.7-22-14.7-22-28V12z"/>
-        <path fill="#fff" d="M27.7 38.6L20.4 31l3.2-3.1 4.1 4.3 9.7-9.8 3.2 3.1z"/>
-      </svg>
+      <img src="assets/logo-shield-check.png" class="logo-icon">
       <span class="logo-text">HomeSafe360</span>
     </a>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <nav class="main-nav">
+      <button class="nav-toggle">☰</button>
       <ul id="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -37,16 +32,13 @@
   </div>
 </header>
 
+<main>
 
-<!-- ========================================================= -->
-<!-- HERO SECTION (UNCHANGED EXCEPT THE BACKGROUND IMAGE) -->
-<!-- ========================================================= -->
-<section class="hero" style="background-image:url('assets/hero-house.jpg');">
+<!-- ================= HERO ================= -->
+<section class="hero">
   <div class="container hero-inner">
     <div class="hero-copy">
-
-      <h1 class="hero-title">Proactive Home Safety &amp; Preventative Maintenance</h1>
-
+      <h1 class="hero-title">Proactive Home Safety & Preventative Maintenance</h1>
       <p>
         Monthly, quarterly, and annual inspections to protect your home,
         your tenants, and your loved ones. HomeSafe360 keeps small issues
@@ -58,71 +50,58 @@
         <a href="services.html#service-menu" class="btn btn-outline">View Service Menu</a>
       </div>
 
-      <!-- ICON PILL FEATURES (centered labels) -->
-      <div class="hero-features">
-        <div class="feature-pill">
-          <img src="assets/icon-monthly-inspections.png" class="pill-img" />
-          <span class="pill-label">Monthly Inspections</span>
+      <!-- Feature icons -->
+      <div class="icon-grid">
+        <div class="icon-box">
+          <img src="assets/icon-monthly-inspections.png" class="icon-thumb">
+          <p>Monthly Inspections</p>
         </div>
 
-        <div class="feature-pill">
-          <img src="assets/icon-safety-testing.png" class="pill-img" />
-          <span class="pill-label">Safety Testing</span>
+        <div class="icon-box">
+          <img src="assets/icon-safety-testing.png" class="icon-thumb">
+          <p>Safety Testing</p>
         </div>
 
-        <div class="feature-pill">
-          <img src="assets/icon-senior-safety.png" class="pill-img" />
-          <span class="pill-label">Senior Home Safety</span>
+        <div class="icon-box">
+          <img src="assets/icon-senior-safety.png" class="icon-thumb">
+          <p>Senior Safety</p>
         </div>
 
-        <div class="feature-pill">
-          <img src="assets/icon-landlord-compliance.png" class="pill-img" />
-          <span class="pill-label">Landlord Compliance</span>
+        <div class="icon-box">
+          <img src="assets/icon-landlord-compliance.png" class="icon-thumb">
+          <p>Landlord Compliance</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- ================= WHY SAFETY MATTERS — BELOW HERO ================= -->
+<section class="why-safety container">
+  <div class="why-left">
+    <h2>Why Proactive Safety Matters</h2>
+    <ul>
+      <li>Small problems become big emergencies when ignored.</li>
+      <li>Water, mold, electrical and structural hazards often go unseen.</li>
+      <li>Landlords and homeowners save thousands with prevention.</li>
+      <li>Proactive inspections reduce risk, stress, and liability.</li>
+    </ul>
+  </div>
 
-<!-- ========================================================= -->
-<!-- NEW SECTION (INSERTED HERE) — WHY SAFETY MATTERS + BEFORE/AFTER -->
-<!-- ========================================================= -->
-<section class="section why-proactive">
-  <div class="container two-column">
-
-    <!-- LEFT: TEXT -->
-    <div class="why-text">
-      <h2>Why Proactive Safety Matters</h2>
-      <ul>
-        <li>Small problems become big emergencies when ignored.</li>
-        <li>Water, mold, electrical, and structural hazards often go unseen.</li>
-        <li>Landlords and homeowners save thousands through prevention.</li>
-        <li>Documentation reduces risk, stress, and liability.</li>
-      </ul>
+  <div class="mold-compare">
+    <div class="compare-item">
+      <span class="label">Before</span>
+      <img src="assets/Mold-before.jpg" class="compare-img">
     </div>
 
-    <!-- RIGHT: BEFORE/AFTER SIDE-BY-SIDE -->
-    <div class="before-after-grid">
-      <div class="ba-item">
-        <p class="ba-label">Before</p>
-        <img src="assets/Mold-before.jpg" alt="Mold Before" />
-      </div>
-
-      <div class="ba-item">
-        <p class="ba-label">After</p>
-        <img src="assets/Mold-after.jpg" alt="Mold After" />
-      </div>
+    <div class="compare-item">
+      <span class="label">After</span>
+      <img src="assets/Mold-after.jpg" class="compare-img">
     </div>
-
   </div>
 </section>
 
-
-<!-- ========================================================= -->
-<!-- HOW IT WORKS (UNCHANGED) -->
-<!-- ========================================================= -->
+<!-- ================= HOW IT WORKS ================= -->
 <section class="section">
   <div class="container">
     <h2 class="section-title">How HomeSafe360 Works</h2>
@@ -130,42 +109,38 @@
     <div class="three-column">
       <div class="card step-card">
         <h3>1. Baseline Safety Inspection</h3>
-        <p>
-          We start with a full 90-point inspection, photo documentation,
-          and a clear action plan for your home or rental portfolio.
-        </p>
+        <p>We start with a full 90-point inspection and photo documentation.</p>
       </div>
 
       <div class="card step-card">
         <h3>2. Ongoing Check-Ins</h3>
-        <p>
-          Monthly, quarterly, or annual visits to test alarms, scan for leaks,
-          verify ventilation, and re-check key safety points.
-        </p>
+        <p>Monthly, quarterly, or annual visits to test alarms and check for risks.</p>
       </div>
 
       <div class="card step-card">
         <h3>3. Digital Reports & Alerts</h3>
-        <p>
-          You receive a clean, simple report with photos, pass/fail items,
-          and recommended upgrades or add-ons.
-        </p>
+        <p>You receive a clean, simple report with photos, pass/fail items, and upgrades.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ================= (PRICING + CTA + FOOTER LEFT UNCHANGED) ================= -->
 
-<!-- ========================================================= -->
-<!-- PRICING + CTA + FOOTER (UNCHANGED) -->
-<!-- ========================================================= -->
-<section class="section section-alt"> ... (LEAVE YOUR EXISTING CODE HERE) ... </section>
-
-<section class="section"> ... (LEAVE YOUR CTA CODE HERE) ... </section>
-
-<footer class="site-footer"> ... (LEAVE YOUR FOOTER CODE HERE) ... </footer>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HomeSafe360. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="services.html">Services</a> ·
+      <a href="landlords.html">Landlords</a> ·
+      <a href="seniors.html">Senior Safety</a> ·
+      <a href="portal.html">Client Portal</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
 
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
