@@ -1,27 +1,36 @@
-/* ------------ Global Reset ------------ */
+/* ========= GLOBAL ========= */
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  color: #222;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: #f9fbff;
+  color: #333;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* ------------ Header ------------ */
+/* ========= HEADER ========= */
 .site-header {
   background: white;
   border-bottom: 1px solid #e6e6e6;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  align-items: center;
+}
+
+.logo-img {
+  width: 28px;
+  margin-right: 6px;
 }
 
 .logo {
@@ -30,26 +39,21 @@ img {
   text-decoration: none;
 }
 
-.logo-icon {
-  width: 26px;
-  margin-right: 6px;
-}
-
 .logo-text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  color: #0d1c32;
+  color: #1a1a1a;
 }
 
 .main-nav ul {
   display: flex;
+  gap: 24px;
   list-style: none;
-  gap: 26px;
 }
 
 .main-nav a {
   text-decoration: none;
-  color: #333;
+  color: #444;
   font-size: 15px;
 }
 
@@ -58,35 +62,43 @@ img {
   color: #0d6efd;
 }
 
-/* ------------ Hero Section ------------ */
+/* ========= HERO ========= */
+
 .hero {
-  background: url("../hero-house.jpg") center/cover no-repeat;
-  padding: 90px 0;
+  background-image: url("assets/hero-house.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+  color: white;
   position: relative;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.20));
 }
 
-.hero-copy {
-  max-width: 540px;
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 560px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 38px;
+  line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 17px;
-  margin-bottom: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.hero-cta .btn {
+.btn {
   padding: 12px 22px;
   border-radius: 8px;
   font-size: 15px;
@@ -94,136 +106,104 @@ img {
   margin-right: 12px;
 }
 
-.btn-primary {
+.primary {
   background: #0d6efd;
   color: white;
 }
 
-.btn-outline {
-  border: 2px solid #0d6efd;
-  color: #0d6efd;
+.outline {
+  border: 2px solid white;
+  color: white;
 }
 
-/* Feature Pills */
-.feature-pill-wrap {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.feature-list {
+  margin-top: 22px;
 }
 
-.feature-pill {
-  background: #f0f6ff;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #0d6efd;
+.feature-list p {
+  margin: 4px 0;
   font-weight: 600;
 }
 
-/* ------------ WHY SAFETY MATTERS ------------ */
-.why-safety {
-  padding: 80px 0;
-}
+/* ========= WHY SECTION ========= */
 
-.why-inner {
+.why-section {
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 80px auto;
+  gap: 60px;
 }
 
-.why-left {
+.why-text {
   flex: 1;
 }
 
-.why-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
+.why-text h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
-.compare-box {
+.why-text ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ========= MOLD COMPARISON ========= */
+
+.mold-compare {
   display: flex;
   gap: 20px;
+  flex: 1;
 }
 
-.compare-img {
-  width: 50%;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-}
-
-.label {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: rgba(0,0,0,.7);
-  color: white;
-  padding: 3px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-}
-
-/* ------------ HOW IT WORKS ------------ */
-.section {
-  padding: 80px 0;
-}
-
-.section-title {
+.compare-item {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 45px;
 }
 
-.three-column {
+.compare-item img {
+  width: 100%;
+  max-width: 260px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.compare-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* ========= HOW IT WORKS ========= */
+
+.how-section {
+  margin: 80px auto;
+}
+
+.how-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.steps {
   display: flex;
   gap: 30px;
 }
 
-.step-card {
+.step {
   flex: 1;
-  background: #fff;
+  background: white;
   padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* ------------ Pricing ------------ */
-.section-alt {
-  background: #f7faff;
-}
+/* ========= FOOTER ========= */
 
-.pricing-grid {
-  display: flex;
-  gap: 30px;
-}
-
-.pricing-card {
-  flex: 1;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-}
-
-.pricing-card .price {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.pricing-card.featured {
-  border: 2px solid #0d6efd;
-}
-
-/* ------------ Footer ------------ */
-.site-footer {
-  background: #0d1c32;
-  color: white;
-  padding: 30px 0;
+.footer {
   text-align: center;
-}
-
-.footer-links a {
-  color: #93b1d8;
+  padding: 30px;
+  background: #f0f4ff;
+  margin-top: 80px;
 }
