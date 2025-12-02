@@ -60,7 +60,7 @@ img {
 
 /* ------------ Hero Section ------------ */
 .hero {
-  background: url("../hero-house.jpg") center/cover no-repeat;
+  background: url("/homesafe360-site/assets/hero-house.jpg") center/cover no-repeat;
   padding: 90px 0;
   position: relative;
 }
